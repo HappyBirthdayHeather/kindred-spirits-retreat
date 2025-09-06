@@ -1703,3 +1703,25 @@ body {
     text-shadow: none !important;
 }
 
+/* FAQ items on dark backgrounds - improved visibility */
+.faq-dark-bg {
+    background: rgba(255, 255, 255, 0.95) !important;
+    color: var(--deep-forest) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.faq-dark-bg h3 {
+    color: var(--primary-green) !important;
+    text-shadow: none !important;
+}
+
+.faq-dark-bg p {
+    color: var(--deep-forest) !important;
+    text-shadow: none !important;
+}
+
+.faq-dark-bg i {
+    color: var(--accent-green) !important;
+    text-shadow: none !important;
+}
+
