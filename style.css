@@ -1632,3 +1632,20 @@ body {
         padding: 25px 20px;
     }
 }
+/* Force text color & make it pop with shadow in Nature Adventures section */
+#outdoor, 
+#outdoor h2, 
+#outdoor h3, 
+#outdoor p, 
+#outdoor .section-subtitle, 
+#outdoor .lead, 
+#outdoor .activity-features li {
+    color: #fff !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Brighten icons too */
+#outdoor .fas {
+    color: #fff !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
