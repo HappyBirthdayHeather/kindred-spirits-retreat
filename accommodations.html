@@ -12,27 +12,6 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-    <style>
-        /* Universal class for readable text on dark backgrounds */
-        .text-on-dark {
-            color: #fff !important;
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
-        }
-        .text-on-dark h1,
-        .text-on-dark h2,
-        .text-on-dark h3,
-        .text-on-dark p,
-        .text-on-dark li {
-            color: #fff !important;
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
-        }
-        .text-on-dark .fas,
-        .text-on-dark .fab {
-            color: #fff !important;
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
-        }
-    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -60,7 +39,10 @@
         </nav>
 
         <!-- Page Hero -->
-        <section class="page-hero text-on-dark" style="background: linear-gradient(rgba(45,90,39,0.6), rgba(45,90,39,0.6)), url('attached_assets/generated_images/Treehouse_canopy_accommodation_7f5b522d.png') center/cover;">
+        <section class="page-hero">
+            <div class="hero-image">
+                <img src="attached_assets/generated_images/Treehouse_canopy_accommodation_7f5b522d.png" alt="Luxury Accommodations">
+            </div>
             <div class="hero-content">
                 <h1>Stay in Harmony with Nature</h1>
                 <p>Unique eco-friendly accommodations for every type of traveler</p>
@@ -69,7 +51,7 @@
     </header>
 
     <!-- Glamping Tents -->
-    <section id="glamping" class="section text-on-dark">
+    <section id="glamping" class="section">
         <div class="container">
             <div class="section-header">
                 <h2>Glamping Tents</h2>
@@ -98,7 +80,7 @@
     </section>
 
     <!-- A-Frame Cabins -->
-    <section id="cabins" class="section values-section text-on-dark">
+    <section id="cabins" class="section values-section">
         <div class="container">
             <div class="section-header">
                 <h2>A-Frame Cabins</h2>
@@ -127,7 +109,7 @@
     </section>
 
     <!-- Treehouses -->
-    <section id="treehouses" class="section text-on-dark">
+    <section id="treehouses" class="section">
         <div class="container">
             <div class="section-header">
                 <h2>Treehouses</h2>
@@ -155,62 +137,62 @@
         </div>
     </section>
 
-    <!-- What's Included -->
-    <section class="section values-section text-on-dark" style="background: linear-gradient(rgba(45,90,39,0.8), rgba(45,90,39,0.8)), url('attached_assets/generated_images/Farm-to-table_outdoor_dining_experience_bd3ebb3e.png') center/cover;">
-        <div class="container">
-            <div class="section-header">
-                <h2>What's Included</h2>
-                <p class="section-subtitle">Every stay comes with thoughtful amenities</p>
+<!-- Accommodation Features -->
+<section class="section values-section" style="background: linear-gradient(rgba(45, 90, 39, 0.85), rgba(45, 90, 39, 0.85)), url('attached_assets/generated_images/Farm-to-table_outdoor_dining_experience_bd3ebb3e.png') center/cover;">
+    <div class="container">
+        <div class="section-header" style="color: #ffffff; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">
+            <h2>What's Included</h2>
+            <p class="section-subtitle">Every stay comes with thoughtful amenities</p>
+        </div>
+        <div class="values-grid">
+            <div class="value-card" style="color: #ffffff; text-shadow: 1px 1px 3px rgba(0,0,0,0.6);">
+                <div class="value-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3>Farm-to-Table Breakfast</h3>
+                <p>Start your day with organic ingredients harvested fresh from our gardens and greenhouse.</p>
             </div>
-            <div class="values-grid">
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-utensils"></i>
-                    </div>
-                    <h3>Farm-to-Table Breakfast</h3>
-                    <p>Start your day with organic ingredients harvested fresh from our gardens and greenhouse.</p>
+            <div class="value-card" style="color: #ffffff; text-shadow: 1px 1px 3px rgba(0,0,0,0.6);">
+                <div class="value-icon">
+                    <i class="fas fa-swimmer"></i>
                 </div>
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-swimmer"></i>
-                    </div>
-                    <h3>Natural Swimming Access</h3>
-                    <p>Enjoy unlimited access to our natural swimming pond and waterfall features.</p>
+                <h3>Natural Swimming Access</h3>
+                <p>Enjoy unlimited access to our natural swimming pond and waterfall features.</p>
+            </div>
+            <div class="value-card" style="color: #ffffff; text-shadow: 1px 1px 3px rgba(0,0,0,0.6);">
+                <div class="value-icon">
+                    <i class="fas fa-hiking"></i>
                 </div>
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-hiking"></i>
-                    </div>
-                    <h3>Trail Access</h3>
-                    <p>Explore our network of hiking trails through diverse ecosystems and scenic viewpoints.</p>
+                <h3>Trail Access</h3>
+                <p>Explore our network of hiking trails through diverse ecosystems and scenic viewpoints.</p>
+            </div>
+            <div class="value-card" style="color: #ffffff; text-shadow: 1px 1px 3px rgba(0,0,0,0.6);">
+                <div class="value-icon">
+                    <i class="fas fa-fire"></i>
                 </div>
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-fire"></i>
-                    </div>
-                    <h3>Community Fire Pit</h3>
-                    <p>Gather around the evening fire for storytelling, music, and connection with fellow guests.</p>
+                <h3>Community Fire Pit</h3>
+                <p>Gather around the evening fire for storytelling, music, and connection with fellow guests.</p>
+            </div>
+            <div class="value-card" style="color: #ffffff; text-shadow: 1px 1px 3px rgba(0,0,0,0.6);">
+                <div class="value-icon">
+                    <i class="fas fa-wifi"></i>
                 </div>
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-wifi"></i>
-                    </div>
-                    <h3>Limited Wi-Fi</h3>
-                    <p>Stay connected when needed with Wi-Fi in common areas while embracing digital detox.</p>
+                <h3>Limited Wi-Fi</h3>
+                <p>Stay connected when needed with Wi-Fi in common areas while embracing digital detox.</p>
+            </div>
+            <div class="value-card" style="color: #ffffff; text-shadow: 1px 1px 3px rgba(0,0,0,0.6);">
+                <div class="value-icon">
+                    <i class="fas fa-recycle"></i>
                 </div>
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-recycle"></i>
-                    </div>
-                    <h3>Sustainable Practices</h3>
-                    <p>All accommodations feature composting toilets, solar power, and eco-friendly amenities.</p>
-                </div>
+                <h3>Sustainable Practices</h3>
+                <p>All accommodations feature composting toilets, solar power, and eco-friendly amenities.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section> </section>
 
     <!-- Booking Information -->
-    <section class="section text-on-dark">
+    <section class="section">
         <div class="container">
             <div class="section-header">
                 <h2>Planning Your Stay</h2>
@@ -240,7 +222,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="section cta-section text-on-dark">
+    <section class="section cta-section">
         <div class="container">
             <div class="cta-content">
                 <h2>Ready to Book Your Retreat?</h2>
@@ -254,7 +236,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer text-on-dark">
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
