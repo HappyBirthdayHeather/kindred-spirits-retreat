@@ -1,4 +1,9 @@
 /* Reset and Base Styles */
+
+.highlight-text {
+    color: #ffffff; 
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
 * {
     margin: 0;
     padding: 0;
