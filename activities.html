@@ -1,90 +1,267 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Activities - Kindred Spirits Retreat & Farm</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-<style>
-    /* Base & Responsive Styles - similar to accommodations.html */
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Poppins', sans-serif; line-height: 1.6; }
-    img { max-width: 100%; height: auto; }
-    .container { width: 90%; max-width: 1200px; margin: auto; }
-    h1, h2, h3 { margin-bottom: 0.5em; }
-    p, li { margin-bottom: 1em; }
-    ul { list-style: disc; padding-left: 20px; }
-    .section { padding: 50px 0; }
-    .section-header { text-align: center; margin-bottom: 40px; }
-    .activities-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
-    .activity-item { padding: 20px; border: 1px solid #ccc; border-radius: 8px; text-align: center; }
-    .activity-item i { font-size: 2em; margin-bottom: 10px; color: #3aafa9; }
-
-    @media(max-width:1024px) { .activities-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media(max-width:768px) { .activities-grid { grid-template-columns: 1fr; } }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#2d5a27">
+    <title>Activities & Experiences - Kindred Spirits Retreat & Farm</title>
+    <meta name="description" content="Discover transformative activities at our permaculture retreat - from farm-to-table dining to wellness programs and educational tours.">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
-<header>
-    <div class="container">
-        <h1>Kindred Spirits Retreat & Farm</h1>
-        <nav>
-            <a href="index.html">Home</a> | 
-            <a href="accommodations.html">Stay</a> | 
-            <a href="activities.html">Experience</a> | 
-            <a href="about.html">Our Story</a> | 
-            <a href="gallery.html">Gallery</a> | 
-            <a href="contact.html">Visit</a>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>Kindred Spirits</h2>
+                    <p>Retreat & Farm</p>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="accommodations.html">Stay</a></li>
+                    <li><a href="activities.html" class="active">Experience</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Visit</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </nav>
-    </div>
-</header>
 
-<section class="section">
-    <div class="container">
-        <div class="section-header">
-            <h2>Our Activities</h2>
-            <p>Reconnect with nature, learn, and rejuvenate through diverse experiences</p>
-        </div>
-        <div class="activities-grid">
-            <div class="activity-item">
-                <i class="fas fa-hiking"></i>
-                <h3>Hiking & Trails</h3>
-                <p>Explore scenic trails through forests, mountains, and riverside paths.</p>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="hero-image">
+                <img src="attached_assets/generated_images/Natural_swimming_pond_oasis_8266202d.png" alt="Activities and Experiences">
             </div>
-            <div class="activity-item">
-                <i class="fas fa-horse"></i>
-                <h3>Horseback & ATV Rides</h3>
-                <p>Adventure through the countryside with guided horseback and ATV tours.</p>
+            <div class="hero-content">
+                <h1>Experiences That Transform</h1>
+                <p>Reconnect with nature through meaningful activities and wellness programs</p>
             </div>
-            <div class="activity-item">
-                <i class="fas fa-fish"></i>
-                <h3>Fishing & Aquaponics Tours</h3>
-                <p>Learn sustainable food production and enjoy peaceful fishing experiences.</p>
+        </section>
+    </header>
+
+    <!-- Wellness Programs -->
+    <section id="wellness" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Wellness & Mindfulness</h2>
+                <p class="section-subtitle">Heal your body, mind, and spirit in nature's embrace</p>
             </div>
-            <div class="activity-item">
-                <i class="fas fa-spa"></i>
-                <h3>Wellness Programs</h3>
-                <p>Yoga, breathwork, massage, and meditation in serene natural settings.</p>
-            </div>
-            <div class="activity-item">
-                <i class="fas fa-fire"></i>
-                <h3>Campfires & Stargazing</h3>
-                <p>Evening gatherings around the fire under clear night skies.</p>
-            </div>
-            <div class="activity-item">
-                <i class="fas fa-landmark"></i>
-                <h3>Indigenous & Cultural Workshops</h3>
-                <p>Hands-on learning of native traditions, crafts, and holistic healing.</p>
+            <div class="activities-content">
+                <div class="activity-detail">
+                    <div class="activity-image">
+                        <img src="attached_assets/generated_images/Forest_yoga_meditation_space_b5c2c272.png" alt="Forest Yoga Session">
+                    </div>
+                    <div class="activity-info">
+                        <h3>Forest Yoga & Meditation</h3>
+                        <p class="lead">Start your day with sunrise yoga sessions in our dedicated forest clearings, followed by guided meditation to center your mind and spirit.</p>
+                        <ul class="activity-features">
+                            <li><i class="fas fa-sun"></i> Daily sunrise and sunset sessions</li>
+                            <li><i class="fas fa-leaf"></i> Natural outdoor studio spaces</li>
+                            <li><i class="fas fa-user"></i> Expert certified instructors</li>
+                            <li><i class="fas fa-heart"></i> All skill levels welcome</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<footer style="background:#222;color:#fff;padding:20px;text-align:center;">
-    &copy; 2025 Kindred Spirits Retreat & Farm. All rights reserved.
-</footer>
+    <!-- Farm-to-Table Dining -->
+    <section id="dining" class="section values-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Farm-to-Table Dining</h2>
+                <p class="section-subtitle">Taste the difference of truly fresh, locally grown ingredients</p>
+            </div>
+            <div class="activities-content">
+                <div class="activity-detail reverse">
+                    <div class="activity-image">
+                        <img src="attached_assets/generated_images/Farm-to-table_outdoor_dining_experience_bd3ebb3e.png" alt="Outdoor Dining Experience">
+                    </div>
+                    <div class="activity-info">
+                        <h3>Organic Culinary Experiences</h3>
+                        <p class="lead">Enjoy meals crafted from ingredients harvested the same day, prepared by chefs who understand the connection between soil and plate.</p>
+                        <ul class="activity-features">
+                            <li><i class="fas fa-carrot"></i> 100% organic ingredients from our farm</li>
+                            <li><i class="fas fa-utensils"></i> Seasonal menus that change weekly</li>
+                            <li><i class="fas fa-fire"></i> Wood-fired outdoor kitchen</li>
+                            <li><i class="fas fa-wine-glass"></i> Herbal teas and fermented beverages</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Educational Tours -->
+    <section id="farming" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Educational Farm Tours</h2>
+                <p class="section-subtitle">Learn the principles of regenerative agriculture and permaculture</p>
+            </div>
+            <div class="activities-content">
+                <div class="activity-detail">
+                    <div class="activity-image">
+                        <img src="attached_assets/generated_images/Aquaponic_greenhouse_food_production_868ac4ae.png" alt="Greenhouse Tour">
+                    </div>
+                    <div class="activity-info">
+                        <h3>Permaculture & Sustainable Farming</h3>
+                        <p class="lead">Discover how we grow food sustainably, manage resources, and work with nature rather than against it through hands-on learning experiences.</p>
+                        <ul class="activity-features">
+                            <li><i class="fas fa-seedling"></i> Guided tours of production areas</li>
+                            <li><i class="fas fa-recycle"></i> Composting and waste management</li>
+                            <li><i class="fas fa-fish"></i> Aquaponics system demonstrations</li>
+                            <li><i class="fas fa-tools"></i> Hands-on workshops available</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outdoor Adventures -->
+    <section id="outdoor" class="section values-section" style="background: linear-gradient(rgba(45, 90, 39, 0.8), rgba(45, 90, 39, 0.8)), url('attached_assets/generated_images/Arkansas_mountain_retreat_landscape_1564664a.png') center/cover; color: white;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nature Adventures</h2>
+                <p class="section-subtitle">Explore the natural beauty of Arkansas through active recreation</p>
+            </div>
+            <div class="activities-content">
+                <div class="activity-detail reverse">
+                    <div class="activity-image">
+                        <img src="attached_assets/generated_images/Natural_swimming_pond_oasis_8266202d.png" alt="Natural Swimming Pond">
+                    </div>
+                    <div class="activity-info">
+                        <h3>Swimming & Water Activities</h3>
+                        <p class="lead">Cool off in our natural swimming pond, complete with waterfall features and crystal-clear water filtered by aquatic plants.</p>
+                        <ul class="activity-features">
+                            <li><i class="fas fa-swimmer"></i> Natural chemical-free swimming</li>
+                            <li><i class="fas fa-tint"></i> Waterfall and natural filtration</li>
+                            <li><i class="fas fa-mountain"></i> Scenic mountain views</li>
+                            <li><i class="fas fa-sun"></i> Perfect for hot Arkansas summers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Additional Activities</h2>
+                <p class="section-subtitle">More ways to connect with nature and community</p>
+            </div>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-hiking"></i>
+                    </div>
+                    <h3>Nature Hiking</h3>
+                    <p>Explore scenic trails through forests and meadows with guided or self-directed hikes.</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Campfire Gatherings</h3>
+                    <p>Evening storytelling and music around the community fire pit under starlit skies.</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Workshops</h3>
+                    <p>Learn traditional skills like food preservation, natural building, and herbal medicine.</p>
+                </div>
+                <div class="activity-card">
+                    <div class="activity-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Stargazing</h3>
+                    <p>Experience the wonder of dark skies away from city lights with telescope viewing sessions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Experience It All?</h2>
+                <p>Book your stay and immerse yourself in transformative activities</p>
+                <div class="cta-buttons">
+                    <a href="accommodations.html" class="btn btn-primary">Book Your Stay</a>
+                    <a href="contact.html" class="btn btn-secondary">Ask Questions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Kindred Spirits</h3>
+                        <p>Retreat & Farm</p>
+                    </div>
+                    <p>Experience regenerative living in the heart of Arkansas's natural beauty.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="accommodations.html">Accommodations</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Experience</h4>
+                    <ul>
+                        <li><a href="activities.html#wellness">Wellness Programs</a></li>
+                        <li><a href="activities.html#farming">Farm Tours</a></li>
+                        <li><a href="activities.html#outdoor">Outdoor Adventures</a></li>
+                        <li><a href="activities.html#dining">Farm-to-Table Dining</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Arkansas Mountains</p>
+                        <p><i class="fas fa-phone"></i> Coming Soon</p>
+                        <p><i class="fas fa-envelope"></i> info@kindredspiritsretreat.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kindred Spirits Retreat & Farm. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
