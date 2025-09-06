@@ -1,8 +1,8 @@
 /* Reset and Base Styles */
 
 .highlight-text {
-    color: #ffffff; 
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    color: #ffffff; /* Bright white text */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Dark shadow for contrast */
 }
 * {
     margin: 0;
