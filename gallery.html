@@ -1,47 +1,252 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gallery - Kindred Spirits Retreat & Farm</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<style>mi
-    body { font-family: 'Poppins', sans-serif; margin:0; padding:0; }
-    .container { width:90%; max-width:1200px; margin:auto; padding:50px 0; }
-    .gallery-grid { display:grid; grid-template-columns: repeat(3, 1fr); gap:20px; }
-    img { width:100%; height:auto; border-radius:8px; }
-    @media(max-width:1024px){ .gallery-grid{grid-template-columns:repeat(2,1fr);} }
-    @media(max-width:768px){ .gallery-grid{grid-template-columns:1fr;} }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#2d5a27">
+    <title>Gallery - Kindred Spirits Retreat & Farm</title>
+    <meta name="description" content="Explore our beautiful retreat through photos of accommodations, activities, farm life, and the stunning Arkansas landscape.">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>Kindred Spirits</h2>
+                    <p>Retreat & Farm</p>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="accommodations.html">Stay</a></li>
+                    <li><a href="activities.html">Experience</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Visit</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
 
-<header class="container">
-    <h1>Gallery</h1>
-    <nav>
-        <a href="index.html">Home</a> | 
-        <a href="accommodations.html">Stay</a> | 
-        <a href="activities.html">Experience</a> | 
-        <a href="about.html">Our Story</a> | 
-        <a href="gallery.html">Gallery</a> | 
-        <a href="contact.html">Visit</a>
-    </nav>
-</header>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="hero-image">
+                <img src="attached_assets/generated_images/Forest_yoga_meditation_space_b5c2c272.png" alt="Gallery">
+            </div>
+            <div class="hero-content">
+                <h1>Our Gallery</h1>
+                <p>Discover the beauty of our regenerative retreat through images</p>
+            </div>
+        </section>
+    </header>
 
-<section class="container">
-    <div class="gallery-grid">
-        <img src="attached_assets/generated_images/Glamping_tent_forest_accommodation_33247fe1.png" alt="Glamping Tent">
-        <img src="attached_assets/generated_images/A-frame_cabin_forest_retreat_65ca61be.png" alt="A-Frame Cabin">
-        <img src="attached_assets/generated_images/Treehouse_canopy_accommodation_7f5b522d.png" alt="Treehouse">
-        <img src="attached_assets/generated_images/RV_site_placeholder.png" alt="RV Site">
-        <img src="attached_assets/generated_images/Farm_field.png" alt="Farm Fields">
-        <img src="attached_assets/generated_images/Nature_trail.png" alt="Nature Trail">
+    <!-- Gallery Filter -->
+    <section class="section">
+        <div class="container">
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="accommodations">Accommodations</button>
+                <button class="filter-btn" data-filter="activities">Activities</button>
+                <button class="filter-btn" data-filter="farm">Farm Life</button>
+                <button class="filter-btn" data-filter="landscape">Landscape</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section gallery-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Accommodations -->
+                <div class="gallery-item" data-category="accommodations">
+                    <img src="attached_assets/generated_images/Glamping_tent_forest_accommodation_33247fe1.png" alt="Glamping Tents">
+                    <div class="gallery-overlay">
+                        <h3>Glamping Tents</h3>
+                        <p>Luxury canvas wall tents in forest clearings</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="accommodations">
+                    <img src="attached_assets/generated_images/A-frame_cabin_forest_retreat_65ca61be.png" alt="A-Frame Cabins">
+                    <div class="gallery-overlay">
+                        <h3>A-Frame Cabins</h3>
+                        <p>Cozy wooden cabins with mountain views</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="accommodations">
+                    <img src="attached_assets/generated_images/Treehouse_canopy_accommodation_7f5b522d.png" alt="Treehouses">
+                    <div class="gallery-overlay">
+                        <h3>Treehouses</h3>
+                        <p>Elevated retreats in the forest canopy</p>
+                    </div>
+                </div>
+
+                <!-- Activities -->
+                <div class="gallery-item" data-category="activities">
+                    <img src="attached_assets/generated_images/Farm-to-table_outdoor_dining_experience_bd3ebb3e.png" alt="Farm-to-Table Dining">
+                    <div class="gallery-overlay">
+                        <h3>Farm-to-Table Dining</h3>
+                        <p>Organic meals in beautiful outdoor settings</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="activities">
+                    <img src="attached_assets/generated_images/Forest_yoga_meditation_space_b5c2c272.png" alt="Forest Yoga">
+                    <div class="gallery-overlay">
+                        <h3>Forest Yoga</h3>
+                        <p>Morning yoga sessions in natural clearings</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="activities">
+                    <img src="attached_assets/generated_images/Natural_swimming_pond_oasis_8266202d.png" alt="Natural Swimming">
+                    <div class="gallery-overlay">
+                        <h3>Natural Swimming Pond</h3>
+                        <p>Crystal clear waters with waterfall features</p>
+                    </div>
+                </div>
+
+                <!-- Farm Life -->
+                <div class="gallery-item" data-category="farm">
+                    <img src="attached_assets/generated_images/Aquaponic_greenhouse_food_production_868ac4ae.png" alt="Greenhouse">
+                    <div class="gallery-overlay">
+                        <h3>Aquaponic Greenhouse</h3>
+                        <p>Sustainable food production year-round</p>
+                    </div>
+                </div>
+
+                <!-- Landscape -->
+                <div class="gallery-item" data-category="landscape">
+                    <img src="attached_assets/generated_images/Arkansas_mountain_retreat_landscape_1564664a.png" alt="Mountain Landscape">
+                    <div class="gallery-overlay">
+                        <h3>Arkansas Mountains</h3>
+                        <p>Breathtaking views of our natural setting</p>
+                    </div>
+                </div>
+
+                <!-- Additional placeholder items for a fuller gallery -->
+                <div class="gallery-item" data-category="landscape">
+                    <img src="attached_assets/generated_images/Arkansas_mountain_retreat_landscape_1564664a.png" alt="Sunrise Views">
+                    <div class="gallery-overlay">
+                        <h3>Sunrise Views</h3>
+                        <p>Golden hour magic over the mountains</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="accommodations">
+                    <img src="attached_assets/generated_images/Glamping_tent_forest_accommodation_33247fe1.png" alt="Tent Interior">
+                    <div class="gallery-overlay">
+                        <h3>Tent Interior</h3>
+                        <p>Comfortable and cozy glamping experience</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="farm">
+                    <img src="attached_assets/generated_images/Aquaponic_greenhouse_food_production_868ac4ae.png" alt="Organic Gardens">
+                    <div class="gallery-overlay">
+                        <h3>Organic Gardens</h3>
+                        <p>Fresh vegetables grown using permaculture</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="activities">
+                    <img src="attached_assets/generated_images/Natural_swimming_pond_oasis_8266202d.png" alt="Evening Reflections">
+                    <div class="gallery-overlay">
+                        <h3>Evening Reflections</h3>
+                        <p>Peaceful moments by the water at sunset</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Modal -->
+    <div id="photoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
     </div>
-</section>
 
-<footer style="background:#222;color:#fff;padding:20px;text-align:center;">
-    &copy; 2025 Kindred Spirits Retreat & Farm. All rights reserved.
-</footer>
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Experience It Yourself</h2>
+                <p>These photos are just the beginning - come create your own memories</p>
+                <div class="cta-buttons">
+                    <a href="accommodations.html" class="btn btn-primary">Book Your Stay</a>
+                    <a href="contact.html" class="btn btn-secondary">Plan Your Visit</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Kindred Spirits</h3>
+                        <p>Retreat & Farm</p>
+                    </div>
+                    <p>Experience regenerative living in the heart of Arkansas's natural beauty.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="accommodations.html">Accommodations</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Experience</h4>
+                    <ul>
+                        <li><a href="activities.html#wellness">Wellness Programs</a></li>
+                        <li><a href="activities.html#farming">Farm Tours</a></li>
+                        <li><a href="activities.html#outdoor">Outdoor Adventures</a></li>
+                        <li><a href="activities.html#dining">Farm-to-Table Dining</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Arkansas Mountains</p>
+                        <p><i class="fas fa-phone"></i> Coming Soon</p>
+                        <p><i class="fas fa-envelope"></i> info@kindredspiritsretreat.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kindred Spirits Retreat & Farm. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
