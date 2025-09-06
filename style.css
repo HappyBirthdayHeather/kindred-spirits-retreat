@@ -1649,3 +1649,24 @@ body {
     color: #fff !important;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
+
+/* Universal class to make text readable on dark/green backgrounds */
+.text-on-dark {
+    color: #fff !important; /* White text */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Glow for visibility */
+}
+
+.text-on-dark h1,
+.text-on-dark h2,
+.text-on-dark h3,
+.text-on-dark p,
+.text-on-dark li {
+    color: #fff !important;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.text-on-dark .fas, 
+.text-on-dark .fab {
+    color: #fff !important;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
