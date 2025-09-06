@@ -697,3 +697,33 @@ body {
         padding: 25px 20px;
     }
 }
+
+/* Stack side-by-side content on mobile */
+@media (max-width: 768px) {
+    .accommodation-layout {
+        flex-direction: column; /* stack content & image */
+        gap: 20px;
+    }
+
+    .accommodation-image img,
+    .hero-image img {
+        width: 100%;  /* make images scale */
+        height: auto;
+    }
+
+    .features-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 columns on mobile */
+        gap: 15px;
+    }
+
+    @media (max-width: 480px) {
+        .features-grid {
+            grid-template-columns: 1fr; /* 1 column for small phones */
+        }
+
+        .future-grid {
+            grid-template-columns: 1fr; /* 1 per row */
+        }
+    }
+}
