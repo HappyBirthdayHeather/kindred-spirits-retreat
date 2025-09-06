@@ -1676,3 +1676,30 @@ body {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
+/* Enhanced highlight text class for maximum visibility */
+.highlight-text,
+.text-on-dark .highlight-text {
+    color: #ffffff !important;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9), 1px 1px 4px rgba(0, 0, 0, 0.7) !important;
+    font-weight: 600 !important;
+}
+
+/* Ensure section headers on green backgrounds are always visible */
+.values-section .section-header h2,
+.values-section .section-subtitle {
+    color: #ffffff !important;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9), 1px 1px 4px rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Make sure value cards maintain good contrast */
+.values-section .value-card {
+    background: rgba(255, 255, 255, 0.95) !important;
+    color: var(--deep-forest) !important;
+}
+
+.values-section .value-card h3,
+.values-section .value-card p {
+    color: var(--deep-forest) !important;
+    text-shadow: none !important;
+}
+
