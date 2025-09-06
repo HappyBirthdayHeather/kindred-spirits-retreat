@@ -1,47 +1,304 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact - Kindred Spirits Retreat & Farm</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<style>
-    body { font-family: 'Poppins', sans-serif; line-height: 1.6; margin:0; padding:0; }
-    .container { width:90%; max-width:600px; margin:auto; padding:50px 0; }
-    input, textarea { width:100%; padding:10px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc; }
-    button { padding:10px 20px; background:#3aafa9; color:#fff; border:none; border-radius:5px; cursor:pointer; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#2d5a27">
+    <title>Contact & Visit - Kindred Spirits Retreat & Farm</title>
+    <meta name="description" content="Contact us to plan your visit to our regenerative retreat in Arkansas. Get directions, availability, and answers to all your questions.">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>Kindred Spirits</h2>
+                    <p>Retreat & Farm</p>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="accommodations.html">Stay</a></li>
+                    <li><a href="activities.html">Experience</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html" class="active">Visit</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
 
-<header class="container">
-    <h1>Contact Us</h1>
-    <nav>
-        <a href="index.html">Home</a> | 
-        <a href="accommodations.html">Stay</a> | 
-        <a href="activities.html">Experience</a> | 
-        <a href="about.html">Our Story</a> | 
-        <a href="gallery.html">Gallery</a> | 
-        <a href="contact.html">Visit</a>
-    </nav>
-</header>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="hero-image">
+                <img src="attached_assets/generated_images/Glamping_tent_forest_accommodation_33247fe1.png" alt="Contact Us">
+            </div>
+            <div class="hero-content">
+                <h1>Plan Your Visit</h1>
+                <p>We're here to help you create the perfect retreat experience</p>
+            </div>
+        </section>
+    </header>
 
-<section class="container">
-    <h2>Get in Touch</h2>
-    <form action="mailto:info@kindredspiritsretreat.com" method="post" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <input type="text" name="subject" placeholder="Subject" required>
-        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-    <p>Email: info@kindredspiritsretreat.com</p>
-    <p>Location: Arkansas Mountains, USA</p>
-</section>
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Get In Touch</h2>
+                    <p>Have questions about accommodations, activities, or availability? We'd love to hear from you.</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
 
-<footer style="background:#222;color:#fff;padding:20px;text-align:center;">
-    &copy; 2025 Kindred Spirits Retreat & Farm. All rights reserved.
-</footer>
+                        <div class="form-group">
+                            <label for="visitType">I'm Interested In:</label>
+                            <select id="visitType" name="visitType">
+                                <option value="">Select an option</option>
+                                <option value="weekend-getaway">Weekend Getaway</option>
+                                <option value="extended-stay">Extended Stay (3+ days)</option>
+                                <option value="group-retreat">Group Retreat</option>
+                                <option value="wellness-program">Wellness Program</option>
+                                <option value="educational-tour">Educational Farm Tour</option>
+                                <option value="event-hosting">Event Hosting</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
 
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="checkIn">Preferred Check-in Date</label>
+                                <input type="date" id="checkIn" name="checkIn">
+                            </div>
+                            <div class="form-group">
+                                <label for="checkOut">Preferred Check-out Date</label>
+                                <input type="date" id="checkOut" name="checkOut">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" name="guests">
+                                <option value="1">1 guest</option>
+                                <option value="2">2 guests</option>
+                                <option value="3">3 guests</option>
+                                <option value="4">4 guests</option>
+                                <option value="5">5 guests</option>
+                                <option value="6+">6+ guests</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your ideal retreat experience, any special needs, or questions you have..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">I'd like to receive updates about new programs and special offers</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-section">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Arkansas Mountains<br>
+                                <em>Exact address provided upon booking</em></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@kindredspiritsretreat.com">info@kindredspiritsretreat.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>Coming Soon<br>
+                                <em>Email is the best way to reach us</em></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Response Time</h3>
+                                <p>We typically respond within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <h3>Follow Our Journey</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section values-section" style="background: linear-gradient(rgba(45, 90, 39, 0.8), rgba(45, 90, 39, 0.8)), url('attached_assets/generated_images/A-frame_cabin_forest_retreat_65ca61be.png') center/cover; color: white;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p class="section-subtitle">Quick answers to help you plan your visit</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3><i class="fas fa-calendar-alt"></i> When are you open?</h3>
+                    <p>We're open year-round, with seasonal variations in activities. Spring through fall offers the fullest experience with all outdoor activities available.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-paw"></i> Are pets allowed?</h3>
+                    <p>We love animals! Well-behaved pets are welcome in designated accommodations with advance notice and a small additional fee.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-utensils"></i> What meals are included?</h3>
+                    <p>Meal packages vary by accommodation type. All our food is organic and grown on-site when possible, with options for all dietary preferences.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-wifi"></i> Is there Wi-Fi?</h3>
+                    <p>Limited Wi-Fi is available in common areas for essential needs. We encourage a digital detox to fully embrace the natural experience.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-car"></i> How do I get there?</h3>
+                    <p>We're about 2 hours from Little Rock. Detailed directions and local transportation options are provided with your booking confirmation.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-undo"></i> What's your cancellation policy?</h3>
+                    <p>We offer flexible cancellation up to 48 hours before arrival. Full terms are provided during the booking process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section Placeholder -->
+    <section class="section map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Find Us</h2>
+                <p class="section-subtitle">Located in the beautiful Arkansas mountains</p>
+            </div>
+            <div class="map-placeholder">
+                <div class="map-content">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Exact Location</h3>
+                    <p>Detailed directions and GPS coordinates will be provided upon booking confirmation to protect the privacy of our natural setting and local community.</p>
+                    <p class="map-note"><strong>General Area:</strong> Arkansas Mountains, approximately 2 hours from Little Rock</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Kindred Spirits</h3>
+                        <p>Retreat & Farm</p>
+                    </div>
+                    <p>Experience regenerative living in the heart of Arkansas's natural beauty.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="accommodations.html">Accommodations</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Experience</h4>
+                    <ul>
+                        <li><a href="activities.html#wellness">Wellness Programs</a></li>
+                        <li><a href="activities.html#farming">Farm Tours</a></li>
+                        <li><a href="activities.html#outdoor">Outdoor Adventures</a></li>
+                        <li><a href="activities.html#dining">Farm-to-Table Dining</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Arkansas Mountains</p>
+                        <p><i class="fas fa-phone"></i> Coming Soon</p>
+                        <p><i class="fas fa-envelope"></i> info@kindredspiritsretreat.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kindred Spirits Retreat & Farm. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
